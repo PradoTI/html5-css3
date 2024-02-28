@@ -115,8 +115,9 @@ GIT E GITHUB
 -GITHUB : repositório remoto (Nuvem)  =  para guardar as versões do projeto na nuvem.
 ****
 
-
-
+****
+Site para gerar QR CODE de URL'S : https://qr.io/?gad_source=1&gclid=CjwKCAiA0PuuBhBsEiwAS7fsNeLz45bijpHq6FVgJMysZRjcqg_SULxhmTuXYzGbvzbaYSjL7LbyqhoCCkkQAvD_BwE
+****
 
 
 
