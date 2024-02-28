@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <main id="visor">
+            <h1>
+                <p id="resultado">resultado aqui</p>
+            </h1>
+            <aside id="teclado">
+                <h2>-</h2>
+                
+
+                <script>
+                    let res = window.document.getElementById('resultado')
+                </script>
+
+
+                <input type="button" value="C" class="linha1" onclick="limpar()">
+                <input type="button" value="/" class="linha1" onclick="dividir()">
+                <input type="button" value="x" class="linha1" onclick="multiplicar()">
+                <input type="button" value="-" class="linha1" onclick="subtrair()">
+                
+                <aside id="numeros">
+                <input type="button" value="7" onclick="sete()" >
+                <script>
+                    function sete() {
+                        let n7 = 7
+                    }
+                </script>
+                <input type="button" value="8" onclick="clicar('8')">
+                <input type="button" value="9" onclick="clicar('9')">
+                <input type="button" value="4" onclick="clicar('4')">
+                <input type="button" value="5" onclick="clicar('5')">
+                <input type="button" value="6" onclick="clicar('6')">
+                <input type="button" value="1" onclick="clicar('1')">
+                <input type="button" value="2" onclick="clicar('2')">
+                <input type="button" value="3" onclick="clicar('3')">
+                </aside>
+
+                <aside id="canto-direito">
+                    <input type="button" value="+" onclick="somar('+')">
+                    <input type="button" value="=" onclick="calcular('=')">
+                </aside>
+                
+                <input type="button" value="0" id="zero" onclick="clicar('0')">
+                <input type="button" value="," id="virgula" onclick="virgula('.')">                
+            </aside>
+        </main>
+        <script>
+            function clicar(num) {
+                document.getElementById('resultado').innerHTML = num
+            }
+        </script>
+    </header>
+        
+    
+    
+    
+      
+</body>
+</html>
