@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, rgb(3, 3, 93), rgb(0, 0, 0));
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        table {
+            border: 1px solid black;   
+            border-radius: 10px;
+            background-color: rgb(169, 169, 169);  
+            margin: auto;
+            margin-top: 50px;
+                     
+        }
+        td {
+            text-align: center;
+        }
+        button {
+            width: 100px;
+            height: 110px;
+            border-radius: 5px;
+            background-color: rgb(47, 46, 46);
+            color: white;
+            font-size: 2em;    
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <!--HIERARQUIA DE TABELAS
+        TABLE = tabela 
+            TABLE ROW ( <tr> ) = linha da tabela 
+                TABLE HEADER ( <th> ) = cabeçalho de tabela 
+                TABLE DATA   ( <td> ) = dados de tabela     
+    -->
+
+</button>
+    
+    <table>
+        
+        <tr> <!-- Primeira linha -->
+            <td><button> C </button></td>
+            <td><button> < </button></td>
+            <td><button> / </button></td>
+            <td><button> x </button></td>
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td><button> 7 </button></td>
+            <td><button> 8 </button></td>
+            <td><button> 9 </button></td>
+            <td><button> - </button></td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td><button> 4 </button></td>
+            <td><button> 5 </button></td>
+            <td><button> 6 </button></td> 
+            <td><button> + </button></td> 
+        </tr>
+        <tr>  <!-- Quarta linha -->
+            <td><button> 1 </button></td>
+            <td><button> 2 </button></td>
+            <td><button> 3 </button></td>
+            <td><button id="igual"> = </button></td>
+        </tr>
+        <tr>  <!-- Quinta linha -->
+            <td><button> 0 </button></td>
+            <td><button> , </button></td>
+            
+        </tr>
+    </table>
+</body>
+</html>
