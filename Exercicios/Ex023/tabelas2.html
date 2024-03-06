@@ -14,18 +14,36 @@
             border-collapse: collapse;
             width: 500px;
             background-color: white;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            background-color: rgb(168, 18, 18);
+            top: -1px;
         }
         td, th {
             border: 1px solid black;
             padding: 8px;
         }
         thead {
-            background-color: rgb(130, 14, 14);
+            background-color: rgb(168, 18, 18);
             color: white;
         }
         .num {
             text-align: right;
         }
+        caption {
+            font-size: 1.5em;
+            background-color: rgb(78, 13, 13);
+            color: white;
+            padding: 5px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(242, 242, 115)
+        } 
     </style>
 
 </head>
@@ -41,10 +59,11 @@
                 TR, TD, TH         
     -->
     <table>
+        <caption>População por Estado</caption>
         <thead>
             <tr> <!-- Cabeçalho -->
-                <th> Estado </th>
-                <th> População </th>
+                <th scope="col"> Estado </th>
+                <th scope="col" style="width: 100px;"> População </th>
             </tr>
         </thead>
 
@@ -161,7 +180,7 @@
 
         <tfoot> <!-- Pé -->
             <thead>
-                <th> Total de habitantes</th>
+                <th scope="row"> Total de habitantes</th>
                 <td class="num"> <strong>203 062 512</strong> </td>
             </thead>
         </tfoot>
